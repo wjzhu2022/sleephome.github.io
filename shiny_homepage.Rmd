@@ -1,0 +1,40 @@
+---
+title: "homepage"
+author: "wz2631"
+date: "2022-11-23"
+output: html_document
+---
+
+```{r,echo=FALSE}
+library(shiny)
+```
+
+```{r,echo=FALSE}
+shinyUI(fluidPage(
+  titlePanel("title panel"),
+  sidebarLayout(
+  sidebarPanel( "sidebar panel"),
+  mainPanel("main panel")
+  )))
+```
+
+```{r,echo=FALSE}
+ui <- fluidPage(
+h1("Did you sleep well?"),
+h2("Sleep problems are common"),
+h3("Sleep & health"),
+h4("Sleep & public health"),
+h5("And here is our project! "),
+hr(),
+br(),
+p(strong("bold")),
+p(em("italic")),
+p(code("code")),
+p("Click",span(style = "color:blue","Here")),
+  a(herf = "www,http://rstudio.com","RStudio Home ")
+)
+```
+
+Adults should sleep 7 or more hours per night on a regular basis to promote optimal health[1]. However, more than one-third of the US population gets less than the recommended amount of sleep (https://aasm.org/seven-or-more-hours-of-sleep-per-night-a-health-necessity-for-adults/). 
+Not getting enough sleep is linked with chronic diseases and adverse health conditions[1], threateniing the nation’s overall public health. Short sleep duration along with other dimensions of poor sleep has been associated with weight gain and obesity[2], type 2 diabetes[3],  increased risk of hypertension[4], cardiovascular disease[5] and depression[6, 7]. Sleep deprivation and disorders are also associated with impaired immune function[8], chronic pain[9], impaired performance, increased errors, and greater risk of accidents[10].
+
